@@ -29,7 +29,7 @@ set encoding=utf-8
 set expandtab                " expand tabs to spaces
 set ignorecase               " case-insensitive search
 set list
-set listchars=tab:▸\ ,trail:▫
+set listchars=tab:▸\ ,trail:·
 set number
 set shiftwidth=2             " normal mode indentation commands use 2 spaces
 set smartcase                " case-sensitive search if any caps
