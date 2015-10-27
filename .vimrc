@@ -20,7 +20,9 @@ filetype plugin indent on    " required
 
 " Color scheme
 syntax enable
-colorscheme Tomorrow-Night
+set background=dark
+colorscheme solarized
+let g:solarized_termtrans=1
 
 set autoindent
 set autoread                 " reload files when changed on disk, i.e. via `git checkout`
@@ -41,8 +43,8 @@ nnoremap <leader>t :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 
 " Setup crosshairs
-hi CursorLine   cterm=NONE ctermbg=232
-hi CursorColumn cterm=NONE ctermbg=232
+hi CursorLine   cterm=NONE ctermbg=0
+hi CursorColumn cterm=NONE ctermbg=0
 set cursorline cursorcolumn
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
