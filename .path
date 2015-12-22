@@ -1,2 +1,2 @@
 export PATH="$HOME/.node/bin:/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="$PATH:~/Development/code/aws/"
+export PATH="$PATH:~/Development/code/aws/bamgo/"
