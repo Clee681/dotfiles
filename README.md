@@ -13,14 +13,3 @@ Config files for vim and tmux. Borrowed from [@holman](https://github.com/holman
   * Add Fish to list of available shells: `echo "/usr/local/bin/fish" | sudo tee -a /etc/shells`
   * Change the default shell: `chsh -s /usr/local/bin/fish`
 7. Install [oh-my-fish](https://github.com/oh-my-fish/oh-my-fish)
-
-## Setup
-1. Fork repo
-2. Clone remote repo
-3. From user directory (i.e. `~`), touch the necessary files
-   * `touch .vimrc`
-   * `touch .tmux.conf`
-4. Create symlinks
-   * `ln -s ~/code/dotfiles/.vimrc ~/.vimrc`
-   * `ln -s ~/code/dotfiles/.tmux.conf ~/.tmux.conf`
-5. Run `brew install reattach-to-user-namespace`
