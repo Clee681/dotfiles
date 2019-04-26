@@ -3,27 +3,27 @@ filetype off     " required
 
 set shell=/bin/bash
 
-" Set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" Specify a directory for plugins
+call plug#begin('~/.vim/plugged')
 
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-Plugin 'jnurmine/Zenburn'
-Plugin 'kien/ctrlp.vim'
+Plug 'haishanh/night-owl.vim'
 
-" All of your Plugins must be added before the following line
-call vundle#end()              " required
-filetype plugin indent on      " required
+" Initialize plugin system
+call plug#end()
+
+" If you have vim >=8.0 or Neovim >= 0.1.5
+if (has("termguicolors"))
+ set termguicolors
+endif
 
 " Color scheme
 syntax on
-colorscheme zenburn
+colorscheme night-owl
 
 set autoread   " Reload files when changed on disk, i.e. via `git checkout`
 set autoindent " New lines inherit indentation of previous lines
 set clipboard=unnamed
-set directory=$HOME/.vim/swp// " Store swp files in one place
+set directory=$HOME/.vim/swp/ " Store swp files in one place
 set encoding=utf-8
 set expandtab  " Expand tabs to spaces
 set ignorecase " Case-insensitive search
