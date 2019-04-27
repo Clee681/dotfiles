@@ -25,6 +25,7 @@ endif
 syntax on
 colorscheme night-owl
 hi Comment guifg=#011627 guibg=#637777
+hi shComment guifg=#011627 guibg=#637777
 
 set autoread   " Reload files when changed on disk, i.e. via `git checkout`
 set autoindent " New lines inherit indentation of previous lines
