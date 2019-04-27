@@ -7,6 +7,8 @@ set shell=/bin/bash
 call plug#begin('~/.vim/plugged')
 
 Plug 'haishanh/night-owl.vim'
+Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Initialize plugin system
 call plug#end()
@@ -60,3 +62,5 @@ set foldlevel=99
 nnoremap <space> za
 
 let mapleader = ","
+" Fuzzy finder for files powered by FZF
+nmap <Leader>t :Files<CR>
