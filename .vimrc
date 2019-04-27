@@ -12,15 +12,17 @@ Plug 'haishanh/night-owl.vim'
 call plug#end()
 
 " If you have vim >=8.0 or Neovim >= 0.1.5
-if exists('+termguicolors')
+if exists("+termguicolors")
+  set termguicolors
+  " set Vim-specific sequences for RGB colors
   let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-  set termguicolors
 endif
 
 " Color scheme
 syntax on
 colorscheme night-owl
+hi Comment guifg=#011627 guibg=#637777
 
 set autoread   " Reload files when changed on disk, i.e. via `git checkout`
 set autoindent " New lines inherit indentation of previous lines
@@ -58,12 +60,3 @@ set foldlevel=99
 nnoremap <space> za
 
 let mapleader = ","
-
-nnoremap <leader>a :Ag<space>
-nnoremap <leader>t :CtrlP<CR>
-nnoremap <leader>b :CtrlPBuffer<CR>
-
-" Setup crosshairs
-" hi CursorLine   cterm=NONE ctermbg=0
-" hi CursorColumn cterm=NONE ctermbg=0
-" set cursorline cursorcolumn
