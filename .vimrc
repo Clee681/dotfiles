@@ -6,7 +6,7 @@ set shell=/bin/bash
 " Specify a directory for plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'haishanh/night-owl.vim'
+Plug 'dracula/vim', {'as':'dracula'}
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
@@ -22,9 +22,12 @@ if exists("+termguicolors")
   let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 endif
 
+let g:dracula_colorterm = 0
+let g:dracula_italic = 0
+
 " Color scheme
 syntax on
-colorscheme night-owl
+colorscheme dracula
 hi Comment guifg=#011627 guibg=#637777
 hi shComment guifg=#011627 guibg=#637777
 
