@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'haishanh/night-owl.vim'
 Plug '/usr/local/opt/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-fugitive'
 
 " Initialize plugin system
 call plug#end()
